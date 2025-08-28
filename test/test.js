@@ -6,6 +6,13 @@ describe('Regular fibonacci value', function() {
       });
 });
 
+describe('negative fib',function() {
+    it('should return undefined', function() {
+        assert.strictEqual(main.fibonacci(-1), undefined)
+    });
+
+});
+
 describe('First two terms', function() {
   it('should return 0 and 1 for first two terms', function() {
       assert.strictEqual(main.fibonacci(0), 0);
